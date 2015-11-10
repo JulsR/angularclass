@@ -1,0 +1,19 @@
+
+<p>Select Airport:</p>
+
+<select ng-model="selectedCity" ng-options="city.value as city.name for city in cities" ng-change="handleCitySelectionChange()"></select>
+
+  <p>{{cityDelayInfo.IATA}}</p>
+
+      <p>IACAO: {{cityDelayInfo.ICAO}}</p>
+
+      <p>IATA: {{cityDelayInfo.city}}</p>
+
+      <p>Delay: {{cityDelayInfo.delay}}</p>
+
+      <p>name: {{cityDelayInfo.name}}</p>
+
+      <p>State: {{cityDelayInfo.state}}</p>
+
+      <p ng-show="cityDelayInfo.delay">Status: {{cityDelayInfo.status}}</p>
+

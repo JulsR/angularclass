@@ -6,7 +6,7 @@ airTravelApp.controller('AirportDelayCtrl', airportDelaysCtrlDef);
 	function airportDelaysCtrlDef ($scope, $http) {
 
 	$scope.selectedCity = 'MIA';
-	$scope.cities = [{name: ' Miami', value: 'MIA'),(name: ' San Francisco', value: 'SFO'),(name: 'John F. Kennedy NY', value: 'JFK'}];
+	$scope.cities = [{name: ' Miami', value: 'MIA'},{name: ' San Francisco', value: 'SFO'},{name: 'John F. Kennedy NY', value: 'JFK'}];
 
 	
 
