@@ -23,7 +23,7 @@
     Search: <input ng-model="query">
     <p> You are searching for:{{ query }} </p>
 
-<cities ng-model="selectedCity" ng-options="item.value as item.name for item in cities" ng-change="handleCitySelectionChange()"> </cities>
+<select ng-model="selectedCity" ng-options="city.value as city.name for city in cities" ng-change="handleCitySelectionChange()"> </select>
      
       <p>{{cityDelayInfo.IATA}}</p>
         <p> ICAO: {{cityDelayInfo.ICAO}}</p>
@@ -31,7 +31,7 @@
         <p> City: {{cityDelayInfo.name}}</p>
         <p> State: {{cityDelayInfo.state}}</p>
         <p> Delay Status: {{cityDelayInfo.delay}}</p>
-        <p ng-show="cityDelayInfo.delay">Status: {{cityDelayInfo.status}}</p>
+        <p ng-show="cityDelayInfo.delay"> Status: {{cityDelayInfo.status}}</p>
 
 </body>
 </html>
