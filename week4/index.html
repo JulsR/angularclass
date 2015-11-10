@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="airTravelApp">
+<head>
+<meta charset="UTF-8">
+<title>Week 3 - Assign</title>
+
+
+<!-- Angular -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+<!-- Controller -->
+<script src="js/maincontroller.js"></script>
+
+
+</head>
+<body>
+    <div ng-controller="AirportDelayCtrl">
+    
+
+    <!--Sidebar content-->
+    <h2> Airport Delay Information</h2>
+
+<cities ng-model="selectedCity" ng-options="item.value as item.name for item in cities" ng-change="handleCitySelectionChange()"> </cities>
+     
+      <p>{{cityDelayInfo.IATA}}</p>
+        <p> ICAO: {{cityDelayInfo.ICAO}}</p>
+        <p> IATA: {{cityDelayInfo.city}}</p>
+        <p> City: {{cityDelayInfo.name}}</p>
+        <p> State: {{cityDelayInfo.state}}</p>
+        <p> Delay Status: {{cityDelayInfo.delay}}</p>
+        <p ng-show="cityDelayInfo.delay">Status: {{cityDelayInfo.status}}</p>
+
+</body>
+</html>

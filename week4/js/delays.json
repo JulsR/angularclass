@@ -1,0 +1,80 @@
+[
+{  
+   "IATA":"MIA",
+   "ICAO":"KMIA",
+   "city":"Miami",
+   "delay":false,
+   "name":"Miami International",
+   "state":"Florida",
+   "status":{  
+      "avgDelay":"",
+      "closureBegin":"",
+      "closureEnd":"",
+      "endTime":"",
+      "maxDelay":"",
+      "minDelay":"",
+      "reason":"No known delays for this airport.",
+      "trend":"",
+      "type":""
+   },
+   "weather":{  
+      "temp":"87.0 F (30.6 C)",
+      "visibility":10,
+      "weather":"Mostly Cloudy",
+      "wind":"West at 5.8mph"
+   }
+},
+
+{  
+   "IATA":"JFK",
+   "ICAO":"KJFK",
+   "city":"New York",
+   "delay":false,
+   "name":"John F Kennedy International",
+   "state":"New York",
+   "status":{  
+      "avgDelay":"",
+      "closureBegin":"",
+      "closureEnd":"",
+      "endTime":"",
+      "maxDelay":"",
+      "minDelay":"",
+      "reason":"No known delays for this airport.",
+      "trend":"",
+      "type":""
+   },
+   "weather":{  
+      "temp":"68.0 F (20.0 C)",
+      "visibility":10,
+      "weather":"Mostly Cloudy",
+      "wind":"West at 19.6mph"
+   }
+},
+
+{  
+   "IATA":"SFO",
+   "ICAO":"KSFO",
+   "city":"San Francisco",
+   "delay":false,
+   "name":"San Francisco International",
+   "state":"California",
+   "status":{  
+      "avgDelay":"",
+      "closureBegin":"",
+      "closureEnd":"",
+      "endTime":"",
+      "maxDelay":"",
+      "minDelay":"",
+      "reason":"No known delays for this airport.",
+      "trend":"",
+      "type":""
+   },
+   "weather":{  
+      "temp":"71.0 F (21.7 C)",
+      "visibility":10,
+      "weather":"Fair",
+      "wind":"West at 16.1mph"
+   }
+}
+
+]

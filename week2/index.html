@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+      
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+   
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Book End</h1>
+      </div>
+    </div>
+
+    <div class="main" ng-controller="MyPhoneListCtrl">
+      <div class="container">
+
+        <h2> {{title}} </h2>
+
+        <ul ng-repeat='i in phones'>
+          <li> {{i.name}}</li>
+           <li> {{i.snippet}}</li>
+        <ul>      
+
+        
+      Search: <input ng-model="query">
+        <li ng-repeat="phone in phones | filter:query"> 
+      </div>
+    </div>
+
+
+    <div class="main" ng-controller="MyNamesListCtrl">
+      <div class="container">
+
+      
+        <h2> {{titulo}} </h2>
+
+           <ul ng-repeat='i in name'>
+          <li> {{i.name}}</li>
+           <li> {{i.snippet}}</li>
+        <ul>
+
+
+      </div> 
+    </div>
+  
+
+    <!-- Modules -->
+  <!--  <script src="js/app.js"></script> -->
+
+    <!-- Controllers -->
+    <script src="/js/controller.js"></script>
+  </body>
+</html>

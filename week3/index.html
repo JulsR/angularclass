@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="placesApp">
+<head>
+<meta charset="UTF-8">
+<title>Week 3 - Assign</title>
+
+
+<!-- Angular -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+<!-- Controller -->
+<script src="js/maincontroller.js"></script>
+
+
+</head>
+<body>
+<div ng-controller="PlacesCtrl">
+
+<!--Sidebar content-->
+<h2>5 Favorite Places</h2>
+Search: <input ng-model="query">
+<p> You are searching for:{{ query }}</p> 
+
+<select ng-model="orderProp">
+<option value="name"> City  </option>
+<option value="country"> Country  </option>
+<option value="population"> Population </option>
+</select> 
+
+ Sorted by {{orderProp}}
+
+<table>
+   <tr>
+   <br>
+     <th>Place</th>
+	 <th>Country</th> 
+	 </br>
+	</tr>
+		<tr ng-repeat="places in countries | filter:query | orderBy:orderProp">
+			 <td>{{places.name}}</td>
+			 <td>{{places.country}}</td>
+			 <td>{{places.population}}</td>
+		</tr>
+  </table>
+  </div>
+ </body>
+</html>

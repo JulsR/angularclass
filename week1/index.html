@@ -1,0 +1,46 @@
+<!doctype html>
+<html ng-app="angularApp">
+  <head>
+    <title>My Angular App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+     <script src="/angularclass/js/controllers.js"></script>
+  </head>
+  <body>
+
+<div ng-controller="PhoneListCtrl">
+
+	<h3> {{myheading}}</h3>
+ 	<h1>Cherope!!!!!!!!!!!! </h1>
+
+ 	<p>Nothing here {{'yet' + '!'}}</p>
+	<p>1 + 2 = {{ 1 + 2 }}</p>
+
+			Search: <input ng-model="query">
+
+
+	 <ul>
+	    <li ng-repeat="phone in phones | filter:query">
+	      <span>{{phone.name}}</span>
+	      <p>{{phone.snippet}}</p>
+	    </li>
+	  </ul>
+
+	<p> I have {{phones.length}} phones. </p>
+	<h3> These are my titles {{titulo}} </h3>
+	<p> I'm searching for {{query}} </p>
+
+	<table>
+	  <tr><th>row number</th></tr>
+	  <tr ng-repeat="i in lista"><td>{{i}}</td></tr>
+	</table>
+
+</div>	
+
+<div>
+
+		<p> I'm searching for {{query}} </p>
+	
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Milan",
+    "country": "Italy",
+    "population": 1
+  },
+  {
+    "name": "Paris",
+    "country": "France",
+    "population": 2
+  },
+  {
+    "name": "Santo Domingo",
+    "country": "Dominican Republic",
+    "population": 3
+  },
+  {
+    "name": "Miami",
+    "country": "United State",
+    "population": 4
+  },
+  {
+    "name": "Seattle",
+    "country": "Switzerland",
+    "population": 5
+  }
+]
